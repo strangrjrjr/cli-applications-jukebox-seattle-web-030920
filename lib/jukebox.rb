@@ -32,10 +32,10 @@ def play(songs)
   #puts choice
   found = false
   songs.each { |song|
-    if (choice.to_i == (song.index - 1)) or (choice == song)
+    #if (choice.to_i == (song.index - 1)) or (choice == song)
       puts "Playing #{song}"
       found = true
-    end
+    #end
   }
   if found == false
     puts "Invalid input, please try again"
