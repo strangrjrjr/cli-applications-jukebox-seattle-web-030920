@@ -49,6 +49,13 @@ end
 def run(songs)
   puts "Please enter a command:"
   choice = gets.strip
-  case choice
-    when 'list'
+  while choice != 'exit'
+    case choice
+      when 'list'
+        list(songs)
+      when 'play'
+        play(songs)
+      when 'help'
+        help
+    
 end
