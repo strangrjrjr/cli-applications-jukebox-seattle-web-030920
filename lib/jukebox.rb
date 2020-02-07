@@ -32,7 +32,7 @@ def play(songs)
   #puts choice
   found = false
   songs.each { |song|
-    if choice.to_i == (song.index - 1) || choice == song
+    if choice.to_i == (song.index - 1)
       puts "Playing #{song}"
       found = true
     end
