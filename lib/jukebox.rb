@@ -39,6 +39,7 @@ def play(songs)
       puts "Playing #{song}"
       found = true
     end
+  end
   }
   if found == false
     puts "Invalid input, please try again"
