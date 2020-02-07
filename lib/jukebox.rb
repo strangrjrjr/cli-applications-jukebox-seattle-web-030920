@@ -49,16 +49,5 @@ end
 def run(songs)
   puts "Please enter a command:"
   choice = gets.strip
-  while choice != 'exit' 
-    if choice == 'list'
-      list(songs)
-    elsif choice == 'play'
-      play(songs)
-    elsif choice == 'help'
-      help
-    end
-  end
-  if choice == 'exit'
-    exit_jukebox
-  end
+  case choice
 end
