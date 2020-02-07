@@ -35,11 +35,12 @@ def play(songs)
   songs.each { |song|
     #binding.pry
     if choice == song or songs.each_index { |index|
-    if (choice.to_i - 1) == index}
+    if (choice.to_i - 1) == index
       puts "Playing #{song}"
       found = true
     end
   end
+    }
   }
   if found == false
     puts "Invalid input, please try again"
