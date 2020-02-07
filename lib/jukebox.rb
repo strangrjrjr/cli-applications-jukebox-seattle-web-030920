@@ -29,7 +29,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   choice = gets.strip
-  puts choice
+  #puts choice
   found = false
   songs.each { |song|
     if choice.to_i == (song.index - 1) || choice == song
