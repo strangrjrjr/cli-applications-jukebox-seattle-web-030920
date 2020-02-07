@@ -50,6 +50,13 @@ def run
   puts "Please enter a command:"
   choice = gets.strip
   while choice != 'exit' 
-  
-
+    if choice == 'list'
+      list(songs)
+    elsif choice == 'play'
+      play(songs)
+    elsif choice == 'help'
+      help
+    end
+    exit_jukebox
+  end
 end
