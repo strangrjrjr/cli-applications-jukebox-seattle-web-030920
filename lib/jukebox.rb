@@ -31,12 +31,12 @@ def play(songs)
   choice = gets.strip
   #puts choice
   found = false
-  songs.each { |song|
+  #songs.each { |song|
     #if (choice.to_i == (song.index - 1)) or (choice == song)
-      puts "Playing #{song}"
-      found = true
+      #puts "Playing #{song}"
+      #found = true
     #end
-  }
+  #}
   if found == false
     puts "Invalid input, please try again"
   end
@@ -47,5 +47,9 @@ def exit_jukebox
 end
 
 def run
+  puts "Please enter a command:"
+  choice = gets.strip
+  while choice != 'exit' 
   
+
 end
