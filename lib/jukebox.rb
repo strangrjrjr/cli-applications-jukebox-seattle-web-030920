@@ -49,6 +49,7 @@ end
 def run(songs)
   puts "Please enter a command:"
   choice = gets.strip
+  puts choice
   while choice != 'exit'
     case choice
       when 'list'
