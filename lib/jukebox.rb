@@ -43,7 +43,9 @@ def play(songs)
     if (choice.to_i - 1) == index
       puts "Playing #{songs[index]}"
       found == true
+    end
   }
+  
   if found == false
     puts "Invalid input, please try again"
   end
