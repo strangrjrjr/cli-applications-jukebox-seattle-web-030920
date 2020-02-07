@@ -39,7 +39,9 @@ def play(songs)
       found = true
     end
   }
-  songs.each_index
+  songs.each_index { |index|
+    if (choice.to_i - 1) == index
+  }
   if found == false
     puts "Invalid input, please try again"
   end
