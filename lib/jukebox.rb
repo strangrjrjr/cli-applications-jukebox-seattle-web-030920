@@ -34,7 +34,7 @@ def play(songs)
   found = false
   songs.each { |song|
     #binding.pry
-    if ((choice.to_i - 1) == (songs.index) or (choice == song)
+    if song.index or (choice == song)
       puts "Playing #{song}"
       found = true
     end
